@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordingViewController.swift
 //  Pitch Perfect
 //
 //  Created by Ahmad on 1/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordingViewController: UIViewController {
     @IBOutlet weak var recordButtonLabel: UIButton!
     @IBOutlet weak var tapToRecordLabel: UILabel!
     @IBOutlet weak var stopRecordButtonLabel: UIButton!
