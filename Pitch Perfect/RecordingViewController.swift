@@ -18,16 +18,21 @@ class RecordingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        stopRecordButtonLabel.isEnabled = false
     }
 
 
     @IBAction func recordButtonClicked(_ sender: Any) {
+        tapToRecordLabel.text = "Recording now..."
+        recordButtonLabel.isEnabled = false
+        stopRecordButtonLabel.isEnabled = true
     }
     @IBAction func stopRecordButtonClicked(_ sender: Any) {
+        tapToRecordLabel.text = "Tap to Record"
+        recordButtonLabel.isEnabled = true
+        stopRecordButtonLabel.isEnabled = false
     }
 }
 
